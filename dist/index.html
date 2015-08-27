@@ -1,0 +1,13 @@
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Foosball</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.6e38f809.css"> <link rel="stylesheet" href="styles/main.e9f294ce.css">  <body ng-app="foosballSlackApp"> <!--[if lt IE 7]>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </div>
+      </div>
+    <![endif]--> <!-- mdl layout --> <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> <!-- mdl header --> <header class="mdl-layout__header mdl-layout__header--waterfall"> <div class="mdl-layout__header-row"> <!-- Title --> <span class="mdl-layout-title">Foosball</span> <!-- Add spacer, to align navigation to the right --> <div class="mdl-layout-spacer"></div> </div> <!-- Bottom row, not visible on scroll --> <div class="mdl-layout__header-row"> <div class="mdl-layout-spacer"></div> <!-- Navigation --> <nav class="mdl-navigation"> <a class="mdl-navigation__link" ng-href="#/">Home</a> <a class="mdl-navigation__link" ng-href="#/about">About</a> </nav> </div> </header> <!-- mdl drawer --> <div class="mdl-layout__drawer"> <span class="mdl-layout-title">Foosball</span> <nav class="mdl-navigation"> <a class="mdl-navigation__link" ng-href="#/">Home</a> <a class="mdl-navigation__link" ng-href="#/about">About</a> </nav> </div> <!-- mdl main content --> <main class="mdl-layout__content"> <div class="page-content" ng-view=""></div> </main> <!-- mdl footer --> <footer class="mdl-mini-footer"> <div class="mdl-mini-footer__left-section"> <div class="mdl-logo">Foosball</div> <ul class="mdl-mini-footer__link-list"> <li><a class="mdl-navigation__link" ng-href="#/">Home</a></li> <li><a class="mdl-navigation__link" ng-href="#/about">About</a></li> </ul> </div> </footer> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <script src="scripts/vendor.d1178b69.js"></script> <script src="scripts/scripts.a160dacb.js"></script>  
