@@ -419,6 +419,34 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+    
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:blakedy/foosball-slack.git',
+          branch: 'gh-pages'
+        }
+      },
+      heroku: {
+        options: {
+          remote: 'git@heroku.com:foosball-slack.git',
+          branch: 'master',
+          tag: pkg.version
+        }
+      },
+      local: {
+        options: {
+          remote: '../',
+          branch: 'build'
+        }
+      }
     }
   });
 
