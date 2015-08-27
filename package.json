@@ -2,7 +2,7 @@
   "name": "foosball-slack",
   "version": "0.0.0",
   "dependencies": {
-    "statik": "^1.4.6",
+    "statik": "^1.4.6"
   },
   "repository": {},
   "devDependencies": {
