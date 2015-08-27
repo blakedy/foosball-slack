@@ -23,6 +23,9 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
+    
+    // Project package
+    pkg: grunt.file.readJSON('package.json'),
 
     // Project settings
     yeoman: appConfig,
@@ -438,7 +441,7 @@ module.exports = function (grunt) {
         options: {
           remote: 'git@heroku.com:foosball-slack.git',
           branch: 'master',
-          tag: pkg.version
+          tag: '<%= pkg.version %>'
         }
       },
       local: {
