@@ -407,16 +407,22 @@ module.exports = function (grunt) {
         connectCommits: false,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
+      pages: {
+        options: {
+          remote: 'git@github.com:blakedy/foosball-slack.git',
+          branch: 'gh-pages'
+        }
+      },
       heroku: {
         options: {
           remote: 'heroku',
           branch: 'master'
         }
       },
-      openshift: {
+      local: {
         options: {
-          remote: 'openshift',
-          branch: 'master'
+          remote: '../',
+          branch: 'build'
         }
       }
     },
