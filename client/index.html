@@ -24,11 +24,63 @@
   </head>
   <body ng-app="foosballSlackApp">
     <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </div>
+      </div>
     <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div ui-view=""></div>
+    
+    <!-- mdl layout -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      
+      <!-- mdl header -->
+      <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Foosball</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+        </div>
+        <!-- Bottom row, not visible on scroll -->
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href='/'>Home</a>
+            <a class="mdl-navigation__link" href='/signup'>Sign up</a>
+            <a class="mdl-navigation__link" href='/login'>Login</a>
+          </nav>
+        </div>
+      </header>
+      
+      <!-- mdl drawer -->
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Foosball</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href='/'>Home</a>
+          <a class="mdl-navigation__link" href='/signup'>Sign up</a>
+          <a class="mdl-navigation__link" href='/login'>Login</a>
+        </nav>
+      </div>
+      
+      <!-- mdl main content -->
+      <main class="mdl-layout__content">
+        <div ui-view=""></div>
+      </main>
+      
+      <!-- mdl footer -->
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">Foosball</div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a class="mdl-navigation__link" href='/'>Home</a></li>
+            <li><a class="mdl-navigation__link" href='/signup'>Sign up</a></li>
+            <li><a class="mdl-navigation__link" href='/login'>Login</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
